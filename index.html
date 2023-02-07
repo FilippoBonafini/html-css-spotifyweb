@@ -25,37 +25,61 @@
     <header>
         <div class="container-menu flex">
             <nav class="menu-music">
-                <li>
-                    <a href="#"><img src="img/logo-small.svg" alt="Spotify" class="logo-small"></a>
-                    <a href="#"><img src="img/logo.svg" alt="Spotify" class=" logo mobile-hidden"></a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="mobile-hidden">Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span class="mobile-hidden">Cerca</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-bookmark"></i>
-                        <span class="mobile-hidden">La tua libreria</span>
-                    </a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/logo-small.svg" alt="Spotify" class="logo-small desktop-hidden"></a>
+                        <a href="#"><img src="img/logo.svg" alt="Spotify" class=" logo mobile-hidden"></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="mobile-hidden">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="mobile-hidden">Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bookmark"></i>
+                            <span class="mobile-hidden">La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile-hidden">
+                    <li class="text-important">PLAYLIST</li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <span>Crea Playlist</span>
+                        </a>
+                    </li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                </ul>
             </nav>
             <nav class="menu-user">
                 <ul>
                     <li>
-                        <a href="#"><i class="fa-regular fa-circle-down"></i></a>
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span class="mobile-hidden">Installa app</span>
+                        </a>
                     </li>
                     <hr class="mobile-hidden">
                     <li class="profile">
-                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                        <a href="#" class="box-user">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="text-important mobile-hidden">John Doe</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -73,7 +97,7 @@
 
     <!-- INIZIO SEZIONE FOOTER: LETTORE MUSICALE -->
     <footer>
-        <div>
+        <div class="player">
 
         </div>
     </footer>
