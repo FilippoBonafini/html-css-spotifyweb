@@ -23,12 +23,41 @@
 
     <!-- INIZIO SEZIONE MENU SINISTRA -->
     <header>
-        <div>
-            <nav>
-                <li>Logo</li>
-                <li>Home</li>
-                <li>search</li>
-                <li>libreria</li>
+        <div class="container-menu flex">
+            <nav class="menu-music">
+                <li>
+                    <a href="#"><img src="img/logo-small.svg" alt="Spotify" class="logo-small"></a>
+                    <a href="#"><img src="img/logo.svg" alt="Spotify" class=" logo mobile-hidden"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="mobile-hidden">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="mobile-hidden">Cerca</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="mobile-hidden">La tua libreria</span>
+                    </a>
+                </li>
+            </nav>
+            <nav class="menu-user">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-circle-down"></i></a>
+                    </li>
+                    <hr class="mobile-hidden">
+                    <li class="profile">
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
