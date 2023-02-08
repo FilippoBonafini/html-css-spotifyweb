@@ -56,6 +56,7 @@ img{
     color: white;
 }
 
+
 @media screen and (min-width:552px){
     .mobile-hidden{
         display: inline-block;
@@ -160,8 +161,14 @@ header li .icona{
     }
     
     header li .icona{
-        display: inline-block;
+        display: block;
         width: 1.25rem;
+    }
+    header li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .3125rem;
     }
     header ul{
         padding-bottom: 1.5rem;
@@ -169,12 +176,34 @@ header li .icona{
     header i{
         font-size: 2rem;
     }
+    
     header .logo{
-      width: 135px;
+      width: 8.4375rem;
     }
     header ul:last-child{
         padding-bottom: 0;
     }
+    header .menu-music{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    header .playlist{
+        overflow:auto;
+        flex-grow: 1;
+    }
+    header .playlist::-webkit-scrollbar
+    {
+        width: .5rem;
+        background-color: #f5f5f5af;
+        border-radius: 1.875rem;
+    }
+    header .playlist::-webkit-scrollbar-thumb
+    {
+        background-color: #000000b7;
+        border-radius: 1.875rem;
+    }
+
 }
 /*---------------------------------------*/
 /*FINE MENU/HEADER SMALL / MEDIUM / LARGE*/
@@ -195,10 +224,53 @@ header li .icona{
 /*-----------------*/
 /*INIZIO CORPO/MAIN*/
 /*-----------------*/
+main{
+    background-color: #141922;
+    margin-left: 3.125rem;
+ }
 
+main .container-corpo{
+    height: calc(100vh - 5.625rem);
+    overflow: auto;
+    padding-top: 5.625rem;
+}
 
+main .menu-upgrade{
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 5.625rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: .875rem;
+}
 
+main .button-upgrade{
+    border: .125rem solid white;
+    position: absolute;
+    padding: .8125rem 1.875rem;
+    border-radius: 3.125rem;
+    right: .3125rem;
+    top: 1.25rem;
+}
 
+main .corpo-main nav ul{
+    padding: .9375rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5625rem;
+    justify-content: center;
+}
+
+main .corpo-main nav a{
+    color: #7d7f84;
+    font-weight: bold;
+    font-size: .875rem;
+}
+
+main .corpo-main nav li{
+    padding-top: .9375rem;
+}
 
 
 
@@ -209,6 +281,15 @@ header li .icona{
 /*---------------*/
 
 
+
+/*-----------------------------------------*/
+/*INIZIO CORPO/MAIN SMALL / MEDIUM / LARGE*/
+/*-----------------------------------------*/
+@media  screen and (min-width:552px) {
+    main{
+        margin-left: 10.9375rem; 
+    }
+}
 
 
 
@@ -225,13 +306,8 @@ header li .icona{
 /*--------------------*/
 
 footer .player{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background-color: #282828;
     height:90px;
-    z-index: 4;
 }
 
 
