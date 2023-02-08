@@ -58,7 +58,7 @@ img{
 
 @media screen and (min-width:552px){
     .mobile-hidden{
-        display: inline;
+        display: inline-block;
     }
     .desktop-hidden{
         display: none;
@@ -117,6 +117,10 @@ header{
 
 header .container-menu{
     height: calc(100vh - 5.625rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+    
 }
 
 header .logo-small{
@@ -131,12 +135,8 @@ header li {
 
 header li *{
     color: #d2d2d2;
-    font-size: 1.375rem;
 }
 
-header .menu-user{
-
-}
 
 header li .icona{
     width: 1.25rem;
@@ -154,10 +154,11 @@ header li .icona{
 @media screen and (min-width:552px){
     header li{
         display: flex;
-        padding: .9375rem;
+        padding: .625rem 1.25rem;
         align-items:  center;
         justify-content: flex-start;
     }
+    
     header li .icona{
         display: inline-block;
         width: 1.25rem;
@@ -170,6 +171,9 @@ header li .icona{
     }
     header .logo{
       width: 135px;
+    }
+    header ul:last-child{
+        padding-bottom: 0;
     }
 }
 /*---------------------------------------*/
