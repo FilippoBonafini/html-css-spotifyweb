@@ -111,9 +111,12 @@ header{
     background-color: black;
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     z-index: 2;
+}
+
+header .container-menu{
+    height: calc(100vh - 5.625rem);
 }
 
 header .logo-small{
@@ -165,8 +168,8 @@ header li .icona{
     header i{
         font-size: 2rem;
     }
-    header .menu-user{
-      
+    header .logo{
+      width: 135px;
     }
 }
 /*---------------------------------------*/
