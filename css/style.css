@@ -56,6 +56,10 @@ img{
     color: white;
 }
 
+.corpo{
+    display: flex;
+}
+
 
 @media screen and (min-width:552px){
     .mobile-hidden{
@@ -108,15 +112,11 @@ img{
 /*------------------------------*/
 /*INIZIO MENU/HEADER EXTRA-SMALL*/
 /*------------------------------*/
-header{
+.menu{
     background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
 }
 
-header .container-menu{
+.menu .container-menu{
     height: calc(100vh - 5.625rem);
     display: flex;
     flex-direction: column;
@@ -124,22 +124,22 @@ header .container-menu{
     
 }
 
-header .logo-small{
+.menu .logo-small{
     width: 1.875rem;
     margin: .3125rem .625rem;
 }
 
-header li {
+.menu li {
     text-align: center;
     padding-bottom: .625rem;
 }
 
-header li *{
+.menu li *{
     color: #d2d2d2;
 }
 
 
-header li .icona{
+.menu li .icona{
     width: 1.25rem;
     margin: auto;
 }
@@ -153,52 +153,52 @@ header li .icona{
 /*INIZIO MENU/HEADER SMALL / MEDIUM / LARGE*/
 /*-----------------------------------------*/
 @media screen and (min-width:552px){
-    header li{
+    .menu li{
         display: flex;
         padding: .625rem 1.25rem;
         align-items:  center;
         justify-content: flex-start;
     }
     
-    header li .icona{
+    .menu li .icona{
         display: block;
         width: 1.25rem;
     }
-    header li a{
+    .menu li a{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: .3125rem;
     }
-    header ul{
+    .menu ul{
         padding-bottom: 1.5rem;
     }
-    header i{
+    .menu i{
         font-size: 2rem;
     }
     
-    header .logo{
+    .menu .logo{
       width: 8.4375rem;
     }
-    header ul:last-child{
+    .menu ul:last-child{
         padding-bottom: 0;
     }
-    header .menu-music{
+    .menu .menu-music{
         display: flex;
         flex-direction: column;
         overflow: hidden;
     }
-    header .playlist{
+    .menu .playlist{
         overflow:auto;
         flex-grow: 1;
     }
-    header .playlist::-webkit-scrollbar
+    .menu .playlist::-webkit-scrollbar
     {
         width: .5rem;
         background-color: #f5f5f5af;
         border-radius: 1.875rem;
     }
-    header .playlist::-webkit-scrollbar-thumb
+    .menu .playlist::-webkit-scrollbar-thumb
     {
         background-color: #000000b7;
         border-radius: 1.875rem;
@@ -224,18 +224,19 @@ header li .icona{
 /*-----------------*/
 /*INIZIO CORPO/MAIN*/
 /*-----------------*/
-main{
+.main{
     background-color: #141922;
-    margin-left: 3.125rem;
+    width: 100%;
+    height: 100%;
  }
 
-main .container-corpo{
+.main .container-corpo{
     height: calc(100vh - 5.625rem);
     overflow: auto;
     padding-top: 5.625rem;
 }
 
-main .menu-upgrade{
+.main .menu-upgrade{
     background-color: rgba(0, 0, 0, 0.493);
     height: 5.625rem;
     position: fixed;
@@ -245,7 +246,7 @@ main .menu-upgrade{
     font-size: .875rem;
 }
 
-main .button-upgrade{
+.main .button-upgrade{
     border: .125rem solid white;
     position: absolute;
     padding: .8125rem 1.875rem;
@@ -254,7 +255,7 @@ main .button-upgrade{
     top: 1.25rem;
 }
 
-main .corpo-main nav ul{
+.main .corpo-main nav ul{
     padding: .9375rem;
     display: flex;
     flex-wrap: wrap;
@@ -262,13 +263,13 @@ main .corpo-main nav ul{
     justify-content: center;
 }
 
-main .corpo-main nav a{
+.main .corpo-main nav a{
     color: #7d7f84;
     font-weight: bold;
     font-size: .875rem;
 }
 
-main .corpo-main nav li{
+.main .corpo-main nav li{
     padding-top: .9375rem;
 }
 
@@ -286,8 +287,8 @@ main .corpo-main nav li{
 /*INIZIO CORPO/MAIN SMALL / MEDIUM / LARGE*/
 /*-----------------------------------------*/
 @media  screen and (min-width:552px) {
-    main{
-        margin-left: 10.9375rem; 
+    .main{
+
     }
 }
 
