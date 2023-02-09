@@ -206,14 +206,31 @@ img{
         background-color: #000000b7;
         border-radius: 1.875rem;
     }
+    .menu .profile{
+        padding:0;
+    }
+    .menu .box-user{
+        margin-left: 20px;
+        padding: 10px 0;
+        border-top: .01rem solid white;
+        
+    }
 
 }
 /*---------------------------------------*/
 /*FINE MENU/HEADER SMALL / MEDIUM / LARGE*/
 /*---------------------------------------*/
 
-
-
+/*---------------------------------------*/
+/*INIZIO MENU/HEADER EFFETTI*/
+/*---------------------------------------*/
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*---------------------------------------*/
+/*FINE MENU/HEADER EFFETTI*/
+/*---------------------------------------*/
 
 
 /* ----------------------------------------------- */
@@ -224,9 +241,9 @@ img{
 
 
 
-/*-----------------*/
-/*INIZIO CORPO/MAIN*/
-/*-----------------*/
+/*-----------------------*/
+/*INIZIO CORPO/MAIN SMALL*/
+/*-----------------------*/
 .main{
     background-color: #141922;
     width: 100%;
@@ -325,9 +342,9 @@ img{
     color:#7d7f84 ;
     padding-bottom: 1.25rem;
 }
-/*---------------*/
-/*FINE CORPO/MAIN*/
-/*---------------*/
+/*---------------------*/
+/*FINE CORPO/MAIN SMALL*/
+/*---------------------*/
 
 
 
@@ -359,6 +376,12 @@ img{
         max-width: 11.25rem ;
     } 
 }
+/*--------------------------------------*/
+/*FINE CORPO/MAIN SMALL / MEDIUM / LARGE*/
+/*--------------------------------------*/
+
+
+
 
 
 /* ----------------------------------------------- */
@@ -369,25 +392,23 @@ img{
 
 
 
-/*--------------------*/
-/*INIZIO FOOTER/PLAYER*/
-/*--------------------*/
+/*--------------------------*/
+/*INIZIO FOOTER/PLAYER SMALL*/
+/*--------------------------*/
 
 footer .player{
     background-color: #282828;
-    height:90px;
+    height:5.625rem;
     display: flex;
     justify-content: space-between;
 }
 
 footer .sinistra{
-width: 230px;
+width: 14.375rem;
 }
-footer .centro{
 
-}
 footer .destra{
-width: 230px;
+width: 14.375rem;
 }
 
 footer .player>div{
@@ -433,21 +454,21 @@ footer .navigazione{
 footer .timeline{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: .3125rem;
     align-items: baseline;
     width: 100%;
 }
 footer .barra{
     background-color:#5a5a5a ;
     flex-grow: 1;
-    height: 5px;
-    border-radius: 5px;
+    height: .3125rem;
+    border-radius: .3125rem;
 }
 footer .timeline .barra{
-    max-width: 430px;
+    max-width: 26.875rem;
 }
 footer .destra .barra{
-    max-width: 120px;
+    max-width: 7.5rem;
 }
 footer .timeline span{
     font-size: 0.6rem;
@@ -456,7 +477,7 @@ footer .barra .ascoltato{
     background-color:#c1c1c1;
     width: 30%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: .3125rem;
 }
 footer .navigazione i{
     color: white;
@@ -468,11 +489,11 @@ footer .destra i{
 }
 footer .navigazione .fa-circle-play{
     font-size: 1.5rem;
-    margin: 0 5px;
+    margin: 0 .3125rem;
 }
-/*------------------*/
-/*FINE FOOTER/PLAYER*/
-/*------------------*/
+/*------------------------*/
+/*FINE FOOTER/PLAYER SMALL*/
+/*------------------------*/
 
 
 /*-----------------------------------------*/
