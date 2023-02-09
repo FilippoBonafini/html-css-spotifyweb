@@ -504,6 +504,16 @@ footer .barra{
     height: .3125rem;
     border-radius: .3125rem;
 }
+footer .sfera{
+    height: 12px;
+    background-color: #c1c1c1;
+    width: 12px;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    border-radius: 50%;
+    display: none;
+}
 footer .timeline .barra{
     max-width: 26.875rem;
 }
@@ -518,6 +528,7 @@ footer .barra .ascoltato{
     width: 30%;
     height: 100%;
     border-radius: .3125rem;
+    position: relative;
 }
 footer .navigazione i{
     color: white;
@@ -557,6 +568,13 @@ footer .navigazione .fa-circle-play{
 }
 
 
+
+footer .barra:hover .sfera{
+    display: block;
+}
+footer .centro .barra:hover .ascoltato{
+    background-color: green;
+}
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
