@@ -550,7 +550,7 @@ footer .navigazione .fa-circle-play{
 /*-----------------------------------------*/
 /*INIZIO PLAYER/FOOTER SMALL / MEDIUM / LARGE*/
 /*-----------------------------------------*/
-/* small  */
+/* small medium large */
 @media  screen and (min-width:552px) {
     footer .icons{
         gap: .9375rem;
@@ -566,7 +566,13 @@ footer .navigazione .fa-circle-play{
         font-size: 0.7rem;
     }
 }
+/*-----------------------------------------*/
+/*FINE PLAYER/FOOTER SMALL / MEDIUM / LARGE*/
+/*-----------------------------------------*/
 
+/*----------------------------*/
+/*INIZIO PLAYER/FOOTER EFFETTI*/
+/*----------------------------*/
 
 
 footer .barra:hover .sfera{
@@ -575,6 +581,16 @@ footer .barra:hover .sfera{
 footer .centro .barra:hover .ascoltato{
     background-color: green;
 }
+footer i:hover{
+    color: green;
+}
+
+/*--------------------------*/
+/*FINE PLAYER/FOOTER EFFETTI*/
+/*--------------------------*/
+
+
+
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
 /* ----------------------------------------------- */
