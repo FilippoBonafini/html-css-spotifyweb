@@ -153,6 +153,9 @@ img{
 /*INIZIO MENU/HEADER SMALL / MEDIUM / LARGE*/
 /*-----------------------------------------*/
 @media screen and (min-width:552px){
+    .menu .menu-music{
+        width: 14.375rem;
+    }
     .menu li{
         display: flex;
         padding: .625rem 1.25rem;
@@ -228,6 +231,7 @@ img{
     background-color: #141922;
     width: 100%;
     height: 100%;
+    overflow: hidden;
  }
 
 .main .container-corpo{
@@ -242,7 +246,7 @@ img{
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: 3.125rem;
     font-size: .875rem;
 }
 
@@ -273,10 +277,48 @@ img{
     padding-top: .9375rem;
 }
 
+.main .contenuto-principale{
+    padding: 1.25rem;
+}
+.main .container-corpo::-webkit-scrollbar
+{
+    width: .5rem;
+    background-color: #f5f5f5af;
+    border-radius: 1.875rem;
+}
+.main .container-corpo::-webkit-scrollbar-thumb
+{
+    background-color: #000000b7;
+    border-radius: 1.875rem;
+}
+.main .container{
+    display: flex;
+    gap: .625rem;
+    flex-wrap: wrap;
+}
 
-
-
-
+.main .container .card{
+    width: calc(100vw / 2 - 3.125rem - .625rem);
+    display: flex;
+    text-align: center;
+}
+.main .container .card img{
+    width: 100%;
+}
+.main h2{
+    margin: 1.875rem 0;
+}
+.main .titolo{
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: .9375rem 0;
+}
+.main .sottotitolo{
+    display: block;
+    color:#7d7f84 ;
+    padding-bottom: 1.25rem;
+}
 /*---------------*/
 /*FINE CORPO/MAIN*/
 /*---------------*/
@@ -286,12 +328,31 @@ img{
 /*-----------------------------------------*/
 /*INIZIO CORPO/MAIN SMALL / MEDIUM / LARGE*/
 /*-----------------------------------------*/
+/* small  */
 @media  screen and (min-width:552px) {
-    .main{
-
+    .main .menu-upgrade{
+        left: 14.375rem ;
+    }
+    .main .container .card{
+        width: calc(100% / 2 - .625rem) ;
+    }
+    
+}
+/* medium */
+@media screen and (min-width:640px){
+    .main .container .card{
+        width: calc(100% / 4 - .625rem);
     }
 }
-
+/* large */
+@media screen and (min-width:878px){
+    .main .container .card{
+        width: calc(100% / 6 - .625rem);
+    }  
+    .main .container .card img{
+        max-width: 180px ;
+    } 
+}
 
 
 /* ----------------------------------------------- */
