@@ -261,6 +261,7 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.493);
     height: 5.625rem;
     position: fixed;
+    z-index: 777;
     top: 0;
     right: 0;
     left: 3.125rem;
@@ -319,6 +320,20 @@ a:hover{
     width: calc(100vw / 2 - 3.125rem - .625rem);
     display: flex;
     text-align: center;
+}
+.main .container .circular img{
+    border-radius: 50%;
+}
+.main .container .hover-play{
+    position: relative;
+    z-index: 1;
+}
+.main .container .card i{
+    font-size: 3.75rem;
+    position: absolute;
+    top: calc(50% - 1.5625rem );
+    right: calc(50% - 25px);
+    display: none;
 }
 .main .container .card img{
     width: 100%;
@@ -379,6 +394,31 @@ a:hover{
 /*--------------------------------------*/
 /*FINE CORPO/MAIN SMALL / MEDIUM / LARGE*/
 /*--------------------------------------*/
+
+
+
+
+/*-------------------------------*/
+/*INIZIO CORPO PRINCIPALE EFFETTI*/
+/*-------------------------------*/
+.main nav a:hover{
+    color: white;
+}
+
+.main .container .hover-play:hover i{
+    display: block;
+}
+
+.main .container .hover-play:hover img{
+    filter: opacity(30%);
+}
+.main .button-upgrade:hover{
+    scale: 1.05;
+}
+/*-----------------------------*/
+/*FINE CORPO PRINCIPALE EFFETTI*/
+/*-----------------------------*/
+
 
 
 
