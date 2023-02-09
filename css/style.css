@@ -373,24 +373,21 @@ img{
 /*INIZIO FOOTER/PLAYER*/
 /*--------------------*/
 
-footer *{
-    font-weight: bold;
-}
-
 footer .player{
     background-color: #282828;
     height:90px;
     display: flex;
+    justify-content: space-between;
 }
 
 footer .sinistra{
-    width: 14.375rem ;
+width: 230px;
 }
 footer .centro{
-margin: auto;
+
 }
 footer .destra{
-    width: 14.375rem ;
+width: 230px;
 }
 
 footer .player>div{
@@ -426,14 +423,53 @@ footer .centro{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
-.navigazione{
-    background-color: green;
+footer .navigazione{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
 }
-.timeline{
-    background-color: red;
+footer .timeline{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: baseline;
+    width: 100%;
 }
-
+footer .barra{
+    background-color:#5a5a5a ;
+    flex-grow: 1;
+    height: 5px;
+    border-radius: 5px;
+}
+footer .timeline .barra{
+    max-width: 430px;
+}
+footer .destra .barra{
+    max-width: 120px;
+}
+footer .timeline span{
+    font-size: 0.6rem;
+}
+footer .barra .ascoltato{
+    background-color:#c1c1c1;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+}
+footer .navigazione i{
+    color: white;
+    font-size: 1rem;
+}
+footer .destra i{
+    color: white;
+    font-size: 0.8rem;
+}
+footer .navigazione .fa-circle-play{
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
 /*------------------*/
 /*FINE FOOTER/PLAYER*/
 /*------------------*/
